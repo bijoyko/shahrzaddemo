@@ -19,7 +19,7 @@ func main() {
 	router.LoadHTMLGlob("*.html")
 
 	router.GET("/", mainPage)
-	router.POST("/enterlink", openPage)
+	router.POST("/demo", openPage)
 	router.Run(":" + port)
 	// router.Run(":8080")
 }
