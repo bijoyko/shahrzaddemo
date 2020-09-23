@@ -15,7 +15,7 @@ func main() {
 	}
 	router := gin.Default()
 	router.Use(gin.Logger())
-	// router.Static("/assets", "./assets")
+	router.Static("/assets", "./assets")
 	router.LoadHTMLGlob("*.html")
 
 	router.GET("/", mainPage)
